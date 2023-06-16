@@ -144,6 +144,13 @@ namespace C__Calculator
                     TxtBox.Text = Results.ToString();
                     break;
 
+                case "*":
+
+                    secondVal = decimal.Parse(TxtBox.Text);
+                    Results = firstVal * secondVal;
+                    TxtBox.Text = Results.ToString();
+                    break;
+
                 case "%":
 
                     secondVal = decimal.Parse(TxtBox.Text);
