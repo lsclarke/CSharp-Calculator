@@ -28,181 +28,272 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
-            button14 = new Button();
+            TxtBox = new TextBox();
+            OneBtn = new Button();
+            TwoBtn = new Button();
+            ThreeBtn = new Button();
+            FourBtn = new Button();
+            FiveBtn = new Button();
+            SixBtn = new Button();
+            SevenBtn = new Button();
+            EightBtn = new Button();
+            NineBtn = new Button();
+            ZeroBtn = new Button();
+            DotBtn = new Button();
+            EqualBtn = new Button();
+            PlusBtn = new Button();
+            ClearBtn = new Button();
+            MinusBtn = new Button();
+            TimesBtn = new Button();
+            DivideBtn = new Button();
+            MinusPlusBtn = new Button();
+            PercentageBtn = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // TxtBox
             // 
-            textBox1.Font = new Font("Trebuchet MS", 50F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(12, 12);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(776, 85);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "0";
-            textBox1.TextAlign = HorizontalAlignment.Right;
-            textBox1.TextChanged += textBox1_TextChanged;
+            TxtBox.Font = new Font("Trebuchet MS", 50F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtBox.Location = new Point(12, 12);
+            TxtBox.Name = "TxtBox";
+            TxtBox.ReadOnly = true;
+            TxtBox.Size = new Size(707, 85);
+            TxtBox.TabIndex = 0;
+            TxtBox.Text = "0";
+            TxtBox.TextAlign = HorizontalAlignment.Right;
             // 
-            // button1
+            // OneBtn
             // 
-            button1.Location = new Point(12, 141);
-            button1.Name = "button1";
-            button1.Size = new Size(150, 62);
-            button1.TabIndex = 1;
-            button1.Text = "1";
-            button1.UseVisualStyleBackColor = true;
+            OneBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            OneBtn.Location = new Point(12, 141);
+            OneBtn.Name = "OneBtn";
+            OneBtn.Size = new Size(150, 62);
+            OneBtn.TabIndex = 1;
+            OneBtn.Text = "1";
+            OneBtn.UseVisualStyleBackColor = true;
+            OneBtn.Click += OneBtn_Click;
             // 
-            // button2
+            // TwoBtn
             // 
-            button2.Location = new Point(179, 141);
-            button2.Name = "button2";
-            button2.Size = new Size(150, 62);
-            button2.TabIndex = 2;
-            button2.Text = "2";
-            button2.UseVisualStyleBackColor = true;
+            TwoBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            TwoBtn.Location = new Point(179, 141);
+            TwoBtn.Name = "TwoBtn";
+            TwoBtn.Size = new Size(150, 62);
+            TwoBtn.TabIndex = 2;
+            TwoBtn.Text = "2";
+            TwoBtn.UseVisualStyleBackColor = true;
+            TwoBtn.Click += TwoBtn_Click;
             // 
-            // button3
+            // ThreeBtn
             // 
-            button3.Location = new Point(345, 141);
-            button3.Name = "button3";
-            button3.Size = new Size(150, 62);
-            button3.TabIndex = 3;
-            button3.Text = "3";
-            button3.UseVisualStyleBackColor = true;
+            ThreeBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            ThreeBtn.Location = new Point(345, 141);
+            ThreeBtn.Name = "ThreeBtn";
+            ThreeBtn.Size = new Size(150, 62);
+            ThreeBtn.TabIndex = 3;
+            ThreeBtn.Text = "3";
+            ThreeBtn.UseVisualStyleBackColor = true;
+            ThreeBtn.Click += ThreeBtn_Click;
             // 
-            // button4
+            // FourBtn
             // 
-            button4.Location = new Point(12, 209);
-            button4.Name = "button4";
-            button4.Size = new Size(150, 62);
-            button4.TabIndex = 4;
-            button4.Text = "4";
-            button4.UseVisualStyleBackColor = true;
+            FourBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            FourBtn.Location = new Point(12, 209);
+            FourBtn.Name = "FourBtn";
+            FourBtn.Size = new Size(150, 62);
+            FourBtn.TabIndex = 4;
+            FourBtn.Text = "4";
+            FourBtn.UseVisualStyleBackColor = true;
+            FourBtn.Click += FourBtn_Click;
             // 
-            // button5
+            // FiveBtn
             // 
-            button5.Location = new Point(179, 209);
-            button5.Name = "button5";
-            button5.Size = new Size(150, 62);
-            button5.TabIndex = 5;
-            button5.Text = "5";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            FiveBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            FiveBtn.Location = new Point(179, 209);
+            FiveBtn.Name = "FiveBtn";
+            FiveBtn.Size = new Size(150, 62);
+            FiveBtn.TabIndex = 5;
+            FiveBtn.Text = "5";
+            FiveBtn.UseVisualStyleBackColor = true;
+            FiveBtn.Click += FiveBtn_Click;
             // 
-            // button6
+            // SixBtn
             // 
-            button6.Location = new Point(345, 209);
-            button6.Name = "button6";
-            button6.Size = new Size(150, 62);
-            button6.TabIndex = 6;
-            button6.Text = "6";
-            button6.UseVisualStyleBackColor = true;
+            SixBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            SixBtn.Location = new Point(345, 209);
+            SixBtn.Name = "SixBtn";
+            SixBtn.Size = new Size(150, 62);
+            SixBtn.TabIndex = 6;
+            SixBtn.Text = "6";
+            SixBtn.UseVisualStyleBackColor = true;
+            SixBtn.Click += SixBtn_Click;
             // 
-            // button7
+            // SevenBtn
             // 
-            button7.Location = new Point(12, 277);
-            button7.Name = "button7";
-            button7.Size = new Size(150, 62);
-            button7.TabIndex = 7;
-            button7.Text = "7";
-            button7.UseVisualStyleBackColor = true;
+            SevenBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            SevenBtn.Location = new Point(12, 277);
+            SevenBtn.Name = "SevenBtn";
+            SevenBtn.Size = new Size(150, 62);
+            SevenBtn.TabIndex = 7;
+            SevenBtn.Text = "7";
+            SevenBtn.UseVisualStyleBackColor = true;
+            SevenBtn.Click += SevenBtn_Click;
             // 
-            // button8
+            // EightBtn
             // 
-            button8.Location = new Point(179, 277);
-            button8.Name = "button8";
-            button8.Size = new Size(150, 62);
-            button8.TabIndex = 8;
-            button8.Text = "8";
-            button8.UseVisualStyleBackColor = true;
+            EightBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            EightBtn.Location = new Point(179, 277);
+            EightBtn.Name = "EightBtn";
+            EightBtn.Size = new Size(150, 62);
+            EightBtn.TabIndex = 8;
+            EightBtn.Text = "8";
+            EightBtn.UseVisualStyleBackColor = true;
+            EightBtn.Click += EightBtn_Click;
             // 
-            // button9
+            // NineBtn
             // 
-            button9.Location = new Point(345, 277);
-            button9.Name = "button9";
-            button9.Size = new Size(150, 62);
-            button9.TabIndex = 9;
-            button9.Text = "9";
-            button9.UseVisualStyleBackColor = true;
+            NineBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            NineBtn.Location = new Point(345, 277);
+            NineBtn.Name = "NineBtn";
+            NineBtn.Size = new Size(150, 62);
+            NineBtn.TabIndex = 9;
+            NineBtn.Text = "9";
+            NineBtn.UseVisualStyleBackColor = true;
+            NineBtn.Click += NineBtn_Click;
             // 
-            // button10
+            // ZeroBtn
             // 
-            button10.Location = new Point(179, 345);
-            button10.Name = "button10";
-            button10.Size = new Size(150, 62);
-            button10.TabIndex = 10;
-            button10.Text = "0";
-            button10.UseVisualStyleBackColor = true;
+            ZeroBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            ZeroBtn.Location = new Point(12, 345);
+            ZeroBtn.Name = "ZeroBtn";
+            ZeroBtn.Size = new Size(150, 62);
+            ZeroBtn.TabIndex = 10;
+            ZeroBtn.Text = "0";
+            ZeroBtn.UseVisualStyleBackColor = true;
+            ZeroBtn.Click += ZeroBtn_Click;
             // 
-            // button11
+            // DotBtn
             // 
-            button11.Location = new Point(12, 345);
-            button11.Name = "button11";
-            button11.Size = new Size(150, 62);
-            button11.TabIndex = 11;
-            button11.Text = ".";
-            button11.UseVisualStyleBackColor = true;
+            DotBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            DotBtn.Location = new Point(179, 345);
+            DotBtn.Name = "DotBtn";
+            DotBtn.Size = new Size(150, 62);
+            DotBtn.TabIndex = 11;
+            DotBtn.Text = ".";
+            DotBtn.UseVisualStyleBackColor = true;
+            DotBtn.Click += DotBtn_Click;
             // 
-            // button12
+            // EqualBtn
             // 
-            button12.Location = new Point(345, 345);
-            button12.Name = "button12";
-            button12.Size = new Size(150, 62);
-            button12.TabIndex = 12;
-            button12.Text = "-";
-            button12.UseVisualStyleBackColor = true;
+            EqualBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            EqualBtn.Location = new Point(345, 345);
+            EqualBtn.Name = "EqualBtn";
+            EqualBtn.Size = new Size(150, 62);
+            EqualBtn.TabIndex = 12;
+            EqualBtn.Text = "=";
+            EqualBtn.UseVisualStyleBackColor = true;
+            EqualBtn.Click += EqualBtn_Click;
             // 
-            // button13
+            // PlusBtn
             // 
-            button13.Location = new Point(701, 141);
-            button13.Name = "button13";
-            button13.Size = new Size(77, 62);
-            button13.TabIndex = 13;
-            button13.Text = "+";
-            button13.UseVisualStyleBackColor = true;
+            PlusBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            PlusBtn.Location = new Point(529, 209);
+            PlusBtn.Name = "PlusBtn";
+            PlusBtn.Size = new Size(88, 62);
+            PlusBtn.TabIndex = 13;
+            PlusBtn.Text = "+";
+            PlusBtn.UseVisualStyleBackColor = true;
+            PlusBtn.Click += PlusBtn_Click;
             // 
-            // button14
+            // ClearBtn
             // 
-            button14.Location = new Point(701, 209);
-            button14.Name = "button14";
-            button14.Size = new Size(77, 62);
-            button14.TabIndex = 14;
-            button14.Text = "+";
-            button14.UseVisualStyleBackColor = true;
+            ClearBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            ClearBtn.Location = new Point(529, 141);
+            ClearBtn.Name = "ClearBtn";
+            ClearBtn.Size = new Size(190, 62);
+            ClearBtn.TabIndex = 15;
+            ClearBtn.Text = "Clear";
+            ClearBtn.UseVisualStyleBackColor = true;
+            ClearBtn.Click += ClearBtn_Click;
+            // 
+            // MinusBtn
+            // 
+            MinusBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            MinusBtn.Location = new Point(631, 209);
+            MinusBtn.Name = "MinusBtn";
+            MinusBtn.Size = new Size(88, 62);
+            MinusBtn.TabIndex = 16;
+            MinusBtn.Text = "-";
+            MinusBtn.UseVisualStyleBackColor = true;
+            MinusBtn.Click += MinusBtn_Click;
+            // 
+            // TimesBtn
+            // 
+            TimesBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            TimesBtn.Location = new Point(529, 277);
+            TimesBtn.Name = "TimesBtn";
+            TimesBtn.Size = new Size(88, 62);
+            TimesBtn.TabIndex = 17;
+            TimesBtn.Text = "x";
+            TimesBtn.UseVisualStyleBackColor = true;
+            TimesBtn.Click += TimesBtn_Click;
+            // 
+            // DivideBtn
+            // 
+            DivideBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            DivideBtn.Location = new Point(631, 277);
+            DivideBtn.Name = "DivideBtn";
+            DivideBtn.Size = new Size(88, 62);
+            DivideBtn.TabIndex = 18;
+            DivideBtn.Text = "/";
+            DivideBtn.UseVisualStyleBackColor = true;
+            DivideBtn.Click += DivideBtn_Click;
+            // 
+            // MinusPlusBtn
+            // 
+            MinusPlusBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            MinusPlusBtn.Location = new Point(529, 345);
+            MinusPlusBtn.Name = "MinusPlusBtn";
+            MinusPlusBtn.Size = new Size(88, 62);
+            MinusPlusBtn.TabIndex = 19;
+            MinusPlusBtn.Text = "-/+";
+            MinusPlusBtn.UseVisualStyleBackColor = true;
+            // 
+            // PercentageBtn
+            // 
+            PercentageBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            PercentageBtn.Location = new Point(631, 345);
+            PercentageBtn.Name = "PercentageBtn";
+            PercentageBtn.Size = new Size(88, 62);
+            PercentageBtn.TabIndex = 20;
+            PercentageBtn.Text = "%";
+            PercentageBtn.UseVisualStyleBackColor = true;
+            PercentageBtn.Click += PercentageBtn_Click;
             // 
             // Calculator
             // 
             AutoScaleDimensions = new SizeF(7F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 792);
-            Controls.Add(button14);
-            Controls.Add(button13);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            ClientSize = new Size(730, 418);
+            Controls.Add(PercentageBtn);
+            Controls.Add(MinusPlusBtn);
+            Controls.Add(DivideBtn);
+            Controls.Add(TimesBtn);
+            Controls.Add(MinusBtn);
+            Controls.Add(ClearBtn);
+            Controls.Add(PlusBtn);
+            Controls.Add(EqualBtn);
+            Controls.Add(DotBtn);
+            Controls.Add(ZeroBtn);
+            Controls.Add(NineBtn);
+            Controls.Add(EightBtn);
+            Controls.Add(SevenBtn);
+            Controls.Add(SixBtn);
+            Controls.Add(FiveBtn);
+            Controls.Add(FourBtn);
+            Controls.Add(ThreeBtn);
+            Controls.Add(TwoBtn);
+            Controls.Add(OneBtn);
+            Controls.Add(TxtBox);
             Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Calculator";
@@ -214,20 +305,25 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button13;
-        private Button button14;
+        private TextBox TxtBox;
+        private Button OneBtn;
+        private Button TwoBtn;
+        private Button ThreeBtn;
+        private Button FourBtn;
+        private Button FiveBtn;
+        private Button SixBtn;
+        private Button SevenBtn;
+        private Button EightBtn;
+        private Button NineBtn;
+        private Button ZeroBtn;
+        private Button DotBtn;
+        private Button EqualBtn;
+        private Button PlusBtn;
+        private Button ClearBtn;
+        private Button MinusBtn;
+        private Button TimesBtn;
+        private Button DivideBtn;
+        private Button MinusPlusBtn;
+        private Button PercentageBtn;
     }
 }
