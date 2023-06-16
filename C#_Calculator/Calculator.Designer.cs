@@ -184,13 +184,14 @@
             // 
             // EqualBtn
             // 
+            EqualBtn.BackColor = Color.Orange;
             EqualBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
             EqualBtn.Location = new Point(345, 345);
             EqualBtn.Name = "EqualBtn";
             EqualBtn.Size = new Size(150, 62);
             EqualBtn.TabIndex = 12;
             EqualBtn.Text = "=";
-            EqualBtn.UseVisualStyleBackColor = true;
+            EqualBtn.UseVisualStyleBackColor = false;
             EqualBtn.Click += EqualBtn_Click;
             // 
             // PlusBtn
@@ -206,13 +207,14 @@
             // 
             // ClearBtn
             // 
+            ClearBtn.BackColor = Color.Gold;
             ClearBtn.Font = new Font("Trebuchet MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
             ClearBtn.Location = new Point(529, 141);
             ClearBtn.Name = "ClearBtn";
             ClearBtn.Size = new Size(190, 62);
             ClearBtn.TabIndex = 15;
             ClearBtn.Text = "Clear";
-            ClearBtn.UseVisualStyleBackColor = true;
+            ClearBtn.UseVisualStyleBackColor = false;
             ClearBtn.Click += ClearBtn_Click;
             // 
             // MinusBtn
@@ -273,6 +275,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDarkDark;
             ClientSize = new Size(730, 418);
             Controls.Add(PercentageBtn);
             Controls.Add(MinusPlusBtn);
